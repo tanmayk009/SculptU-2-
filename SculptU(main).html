@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SculptU</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    /* CSS for bottom navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #000;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      color: #BDFF00;
+    }
+
+    /* CSS for main content area */
+    .content {
+      margin-bottom: 60px;
+      padding: 20px;
+      text-align: center;
+      /* Background color */
+      color: #BDFF00;
+      position: relative;
+      z-index: 1;
+    margin-top: 300px;
+    }
+    /* CSS for buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #FC0215;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+    }
+
+    .btn:hover {
+      background-color: #ff5722;
+    }
+
+
+
+    /* CSS for titles */
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #BDFF00;
+      letter-spacing: 2px;
+    }
+
+    /* CSS for dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #BDFF00;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Set body background color to black */
+    body {
+      background-color: #000;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* CSS for icons */
+    .fa {
+      margin-right: 5px;
+      color: #00FF00; /* Change color to green */
+    }
+<!-- CSS for widget icons
+.widget-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #BDFF00; /* Change the color to green */
+}
+.BG_image{
+	background-image: url('C:\Users\TANMAY KOHLI\OneDrive\Desktop\html code SCULPTU\bg_img.jpg');
+}
+  </style>
+<div class="BG_image">
+<div class="content" id="content">
+    <!-- Main content area -->
+    <h1 id="title" align="center">Welcome to SculptU</h1>
+    <p>Select a workout plan and start sculpting your body!</p>
+    <button class="btn" onclick="startWorkout()">Start Workout</button>
+    <!-- Dropdown menu with plans -->
+    <div class="dropdown">
+      <button class="btn">Select Plan</button>
+      <div class="dropdown-content">
+        <a href="#">Plan 1</a>
+        <a href="#">Plan 2</a>
+        <a href="#">Plan 3</a>
+      </div>
+    </div>
+</div>
+</div>
+<img src="https://www.nawpic.com/media/2020/gym-nawpic.webp" style="margin-top: -660px;">
+
+  <!-- Link-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="widget">
+      <i class="fas fa-dumbbell fa-3x"></i> <!-- Add Font Awesome icon class -->
+      <p>Workout</p>
+    </div>
+    <div class="widget">
+      <i class="fas fa-heartbeat fa-3x"></i> <!-- Add Font Awesome icon class -->
+      <p>Heart Rate</p>
+    </div>
+    <div class="widget">
+      <i class="fas fa-trophy fa-3x"></i> <!-- Add Font Awesome icon class -->
+      <p>Achievements</p>
+    </div>
+
+    <!-- Include Font Awesome JS library (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+ <div class="navbar">
+    <!-- Bottom navigation bar -->
+    <a href="#" onclick="changeTab(0)"><i class="fa fa-dumbbell"></i> Workouts</a>
+    <a href="#" onclick="changeTab(1)"><i class="fa fa-apple-alt"></i> Nutrition</a>
+    <a href="#" onclick="changeTab(4)"><i class="fa fa-user-circle"></i> Profile</a>
+  </div>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href=workout.html>Workouts</a>
+    <a href=Trainers.html>Trainers</a>
+    <a href=Progress.html>Progress</a>
+    <a href="#Sculptor Pass">Sculptor Pass</a>
+    <a href=Profile.html>Profile</a>
+  </div>
+  <script>
+    // JavaScript function to start workout
+    function startWorkout() {
+      // Add your logic for starting the workout here
+      alert("Workout started!");
+    }
+  </script>
+</body>
+</html>
