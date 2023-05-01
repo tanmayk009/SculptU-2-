@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gym App Login</title>
+    <style>
+      body {
+      	background-color: #f9f9f9;
+      	font-family: 'Montserrat', sans-serif;
+      }
+
+      h1 {
+      	color: #333;
+      	font-size: 32px;
+      	font-weight: 800;
+      	margin-top: 0;
+      }
+
+      .container {
+      	background-color: #fff;
+      	border-radius: 5px;
+      	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      	margin: 100px auto;
+      	padding: 30px;
+      	text-align: center;
+      	width: 500px;
+      }
+
+      form {
+      	margin-top: 20px;
+      }
+
+      label {
+      	color: #333;
+      	display: block;
+      	font-size: 16px;
+      	font-weight: 500;
+      	margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+      	border: 1px solid #ccc;
+      	border-radius: 5px;
+      	box-sizing: border-box;
+      	font-size: 16px;
+      	font-weight: 500;
+      	margin-bottom: 20px;
+      	padding: 10px;
+      	transition: border-color 0.2s ease-in-out;
+      	width: 100%;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+      	border-color: #00a0dc;
+      }
+
+      input[type="submit"] {
+      	background-color: #00a0dc;
+      	border: none;
+      	border-radius: 5px;
+      	color: #fff;
+      	cursor: pointer;
+      	font-size: 16px;
+      	font-weight: 500;
+      	padding: 10px 20px;
+      	transition: background-color 0.2s ease-in-out;
+      }
+
+      input[type="submit"]:hover {
+      	background-color: #008ec1;
+      }
+
+      .forgot-password {
+      	color: #666;
+      	display: block;
+      	margin-top: 10px;
+      	text-decoration: none;
+      	transition: color 0.2s ease-in-out;
+      }
+
+      .forgot-password:hover {
+      	color: #00a0dc;
+      }
+
+      .social-login {
+      	margin-top: 20px;
+      }
+
+      .social-login a {
+      	background-color: #ccc;
+      	border-radius: 50%;
+      	color: #fff;
+      	display: inline-block;
+      	margin-right: 10px;
+      	padding: 10px;
+      	text-decoration: none;
+      	transition: background-color 0.2s ease-in-out;
+      }
+
+      .social-login a:hover {
+      	background-color: #00a0dc;
+      }
+
+      .social-login .fa-facebook-f {
+      	background-color: #3b5998;
+      }
+
+      .social-login .fa-twitter {
+      	background-color: #1da1f2;
+      }
+
+      .social-login .fa-google {
+      	background-color: #dd4b39;
+      }
+
+      .social-login .fa-linkedin-in {
+      	background-color: #0077b5;
+      }
+      </style>
+      </head>
+      <body>
+      	<div class="container">
+      		<h1>Gym App Login</h1>
+      		<form action="" method="POST">
+      			<label for="username">Username</label>
+      			<input type="text" id="username" name="username" required>
+      			<label for="password">Password</label>
+      			<input type="password" id="password" name="password" required>
+      			<input type="submit" value="Login">
+      		</form>
+      		<a href="#" class="forgot-password">Forgot password?</a>
+      <div class="register-link">
+        Don't have an account? <a href="#">Register here</a>
+      </div>
+    </div>
+  </body>
+</html>

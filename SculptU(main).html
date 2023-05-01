@@ -68,13 +68,14 @@
 
     /* CSS for titles */
     h1 {
-      font-size: 36px;
+      font-size: 50px;
       font-weight: bold;
       margin-top: 0;
       margin-bottom: 30px;
       text-transform: uppercase;
       color: #BDFF00;
       letter-spacing: 2px;
+      text-align: center;
     }
 
     /* CSS for dropdown menu */
@@ -131,6 +132,9 @@
   color: #BDFF00; /* Change the color to green */
 }
 .BG_image{
+	background-image: url('C:\Users\tanma\OneDrive\Desktop\FINAL CODE (SCULPTU)\image.png');
+}
+.BG_image{
 	background-image: url('C:\Users\TANMAY KOHLI\OneDrive\Desktop\html code SCULPTU\bg_img.jpg');
 }
   </style>
@@ -142,11 +146,10 @@
     <button class="btn" onclick="startWorkout()">Start Workout</button>
     <!-- Dropdown menu with plans -->
     <div class="dropdown">
-      <button class="btn">Select Plan</button>
+      <button class="btn">Nutrition</button>
       <div class="dropdown-content">
-        <a href="#">Plan 1</a>
-        <a href="#">Plan 2</a>
-        <a href="#">Plan 3</a>
+        <a href=Gym_Nutrition_Plans.html>Nutrition Plans</a>
+        <a href=Suppliments.html>Suppliments</a>
       </div>
     </div>
 </div>
@@ -155,38 +158,19 @@
 
   <!-- Link-->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <div class="widget">
-      <i class="fas fa-dumbbell fa-3x"></i> <!-- Add Font Awesome icon class -->
-      <p>Workout</p>
-    </div>
-    <div class="widget">
-      <i class="fas fa-heartbeat fa-3x"></i> <!-- Add Font Awesome icon class -->
-      <p>Heart Rate</p>
-    </div>
-    <div class="widget">
-      <i class="fas fa-trophy fa-3x"></i> <!-- Add Font Awesome icon class -->
-      <p>Achievements</p>
-    </div>
 
     <!-- Include Font Awesome JS library (optional) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
- <div class="navbar">
-    <!-- Bottom navigation bar -->
-    <a href="#" onclick="changeTab(0)"><i class="fa fa-dumbbell"></i> Workouts</a>
-    <a href="#" onclick="changeTab(1)"><i class="fa fa-apple-alt"></i> Nutrition</a>
-    <a href="#" onclick="changeTab(4)"><i class="fa fa-user-circle"></i> Profile</a>
-  </div>
   <div class="navbar">
     <a href="#home">Home</a>
     <a href=workout.html>Workouts</a>
     <a href=Trainers.html>Trainers</a>
     <a href=Progress.html>Progress</a>
-    <a href="#Sculptor Pass">Sculptor Pass</a>
+    <a href=SculptorPass.html>Sculptor Pass</a>
     <a href=Profile.html>Profile</a>
   </div>
   <script>

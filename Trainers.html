@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gym Trainer Menu</title>
+    <style>
+      body{
+        background-image: url('bg_img.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+      } {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+  color: #BDFF00;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+  h2 {
+        color: BLACK;
+        text-align: center;
+      }
+      .trainer-container {
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+        margin: 20px;
+        max-width: 150px;
+        padding: 25px;
+        display: inline-block;
+      }
+      .trainer-picture {
+        border-radius: 50%;
+        display: block;
+        height: 150px;
+        margin: 0 auto 10px;
+        width: 150px;
+      }
+      .rating {
+        color: BLACK;
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gym Trainers</h1>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>John Smith</h2>
+      <p>Experience: 5 years</p>
+      <p>Specialties: Weight training, cardio, and nutrition</p>
+      <div class="rating">★★★★★</div>
+    </div>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>Jane Doe</h2>
+      <p>Experience: 3 years</p>
+      <p>Specialties: Yoga, Pilates, and meditation</p>
+      <div class="rating">★★★★</div>
+    </div>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>Mike Johnson</h2>
+      <p>Experience: 10 years</p>
+      <p>Specialties: Bodybuilding, powerlifting, and Olympic lifting</p>
+      <div class="rating">★★★★★</div>
+    </div>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>Emily Davis</h2>
+      <p>Experience: 2 years</p>
+      <p>Specialties: Dance fitness, kickboxing, and HIIT</p>
+      <div class="rating">★★★★</div>
+    </div>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>Jane</h2>
+      <p>Experience: 2.5 years</p>
+      <p>Specialties: Weight Loss, Weight Gain, and HIIT</p>
+      <div class="rating">★★★</div>
+    </div>
+    <div class="trainer-container">
+      <img class="trainer-picture" src="profile.png">
+      <h2>James</h2>
+      <p>Experience: 2 years</p>
+      <p>Specialties: muscle training, strenght training, and HIIT</p>
+      <div class="rating">★★★</div>
+    </div>
+    <script>
+  // Add a hover effect to each trainer container
+  const trainerContainers = document.querySelectorAll('.trainer-container');
+  trainerContainers.forEach(container => {
+    container.addEventListener('mouseover', () => {
+      container.style.backgroundColor = '#BDFF00';
+    });
+    container.addEventListener('mouseout', () => {
+      container.style.backgroundColor = 'grey';
+    });
+  });
+
+  // Add a click event listener to each trainer picture
+  const trainerPictures = document.querySelectorAll('.trainer-picture');
+  trainerPictures.forEach(picture => {
+    picture.addEventListener('click', () => {
+      alert(`You clicked on ${picture.alt}`);
+    });
+  });
+</script>
+
+  </body>
+</html>

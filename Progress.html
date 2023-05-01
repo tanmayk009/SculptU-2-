@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fitness Progress Tracker</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #BDFF00;
+        text-align: center;
+      }
+
+      form {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
+      }
+
+      input[type="number"],
+      select {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #BDFF00;
+        border: none;
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+      }
+
+      th {
+        background-color: #BDFF00;
+        color: #000;
+        font-weight: bold;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #BDFF00;
+        color: #000;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Fitness Progress Tracker</h1>
+
+    <form id="form">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="weight">Weight (in kg):</label>
+      <input type="number" id="weight" name="weight" min="1" max="200" required>
+      <label for="height">Height (in cm):</label>
+      <input type="number" id="height" name="height" min="1" max="300" required>
+      <label for="bmi">BMI:</label>
+      <input type="number" id="bmi" name="bmi" readonly>
+      <input type="submit" value="Add Entry">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Weight (kg)</th>
+          <th>Height (cm)</th>
+          <th>BMI</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td>2022-04-21</td>
+          <td>70</td>
+          <td>175</td>
+          <td>22.86</td>
+        </tr>
+
+        <tr>
+          <td>2022-04-14</td>
+          <td>71</td>
+>
+          <td>175</td>
+          <td>23.18</td>
+        </tr>
+        <tr>
+          <td>2022-04-07</td>
+          <td>72</td>
+          <td>175</td>
+          <td>23.53</td>
+        </tr>
+        <tr>
+          <td>2022-03-31</td>
+          <td>73</td>
+          <td>175</td>
+          <td>23.88</td>
+        </tr>
+        <tr>
+          <td>2022-03-24</td>
+          <td>74</td>
+          <td>175</td>
+          <td>24.24</td>
+        </tr>
+        <tr>
+          <td>2022-03-17</td>
+          <td>75</td>
+          <td>175</td>
+          <td>24.49</td>
+        </tr>
+        <tr>
+          <td>2022-03-10</td>
+          <td>76</td>
+          <td>175</td>
+          <td>24.84</td>
+        </tr>
+        <tr>
+          <td>2022-03-03</td>
+          <td>77</td>
+          <td>175</td>
+          <td>25.20</td>
+        </tr>
+      </tbody>
+      </table>
+      <script>
+  // Function to calculate BMI
+  function calculateBMI() {
+    const weight = document.getElementById("weight").value;
+    const height = document.getElementById("height").value / 100; // Convert cm to m
+    const bmi = (weight / (height * height)).toFixed(2);
+    document.getElementById("bmi").value = bmi;
+  }
+
+  // Add event listener to the submit button
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    calculateBMI(); // Call the function to calculate BMI
+    const date = document.getElementById("date").value;
+    const weight = document.getElementById("weight").value;
+    const height = document.getElementById("height").value;
+    const bmi = document.getElementById("bmi").value;
+    // Create a new row in the table with the user input
+    const table = document.querySelector("table tbody");
+    const row = table.insertRow(0);
+    const dateCell = row.insertCell(0);
+    const weightCell = row.insertCell(1);
+    const heightCell = row.insertCell(2);
+    const bmiCell = row.insertCell(3);
+    dateCell.textContent = date;
+    weightCell.textContent = weight;
+    heightCell.textContent = height;
+    bmiCell.textContent = bmi;
+    // Reset the form
+    form.reset();
+  });
+</script>
+</body>
+</html>

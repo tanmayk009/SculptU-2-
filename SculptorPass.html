@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Gyms</title>
+    <style>
+      /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+      }
+
+      /* Container styles */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:grey;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      /* Heading styles */
+      h1 {
+        text-align: center;
+        color:#BDFF00;
+        font-weight: bold;
+        text-shadow: 2px 2px black;
+        margin-bottom: 20px;
+      }
+
+      /* Table styles */
+      table {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 30px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #333;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      /* Rating styles */
+      .rating {
+        display: inline-block;
+        font-size: 20px;
+        color: #BDFF00;
+      }
+
+      .rating::before {
+        content: "\2605";
+      }
+
+      .rating::after {
+        content: attr(data-rating);
+        margin-left: 5px;
+      }
+
+      /* Link styles */
+      a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #f39c12;
+      }
+      body {
+        background-color: black;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>List of Gyms</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Gym Name</th>
+            <th>Rating</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fit and Healthy Gym</td>
+            <td><span class="rating" data-rating="4.5"></span></td>
+            <td><a href="Fit_and_Healthy_Gym.html">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Body Perfect Gym</td>
+            <td><span class="rating" data-rating="4.0"></span></td>
+            <td><a href="Body_Perfect_Gym.html">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Iron Paradise Gym</td>
+            <td><span class="rating" data-rating="3.5"></span></td>
+            <td><a href="Iron_Paradise_Gym.html">View Details</a></td>
+          </tr>
+          <tr>
+            <td>24 Hour Fitness</td>
+            <td><span class="rating" data-rating="4.2"></span></td>
+            <td><a href=24_Hour_Fitness.html>View Details</a></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </body>
+</html>

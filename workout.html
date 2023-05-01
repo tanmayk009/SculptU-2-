@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Workout Tracker</title>
+<style>
+    body {
+
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        background-color: #BDFF00;
+        width: 200px;
+        height: 100vh;
+        padding: 20px;
+        border-right: 1px solid #ccc;
+        box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+    }
+
+    .menu h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+        text-shadow: 1px 1px #ccc;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s ease-in-out;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+
+    .menu a:hover {
+        color: #BDFF00;
+        background-color: #333;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .content h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        color: #333;
+        text-shadow: 1px 1px #ccc;
+    }
+
+    .content p {
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
+
+    .card {
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #333;
+        text-shadow: 1px 1px #ccc;
+    }
+
+    .card p {
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: #BDFF00;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .card a:hover {
+        color: #333;
+    }
+
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content h3 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Workout Body Parts
+    </header>
+    <div class="container">
+        <div class="menu">
+            <h2>Body Parts</h2>
+            <ul>
+                <li><a href=ChestWorkout.html>Chest</a></li>
+                <li><a href=BackWorkout.html>Back</a></li>
+                <li><a href=ShoulderWorkout.html>Shoulders</a></li>
+                <li><a href="#arms">Arms</a></li>
+                <li><a href="#abs">Abs</a></li>
+                <li><a href="#legs">Legs</a></li>
+            </ul>
+        </div>
+        <div class="content">
+          <section id="chest">
+            <h3 style="color: #BDFF00;">Chest Workouts</h3>
+            <p style="color: #fff;">Get a strong and defined chest with exercises like push-ups, bench press, and dumbbell flyes.</p>
+          </section>
+          <section id="back">
+            <h3 style="color: #BDFF00;">Back Workouts</h3>
+            <p style="color: #fff;">Strengthen your back muscles with exercises like pull-ups, rows, and deadlifts to improve your posture and balance.</p>
+          </section>
+          <section id="shoulders">
+            <h3 style="color: #BDFF00;">Shoulder Workouts</h3>
+            <p style="color: #fff;">Build broad and strong shoulders with exercises like overhead press, lateral raises, and front raises.</p>
+          </section>
+          <section id="arms">
+            <h3 style="color: #BDFF00;">Arm Workouts</h3>
+            <p style="color: #fff;">Get toned arms with exercises like bicep curls, tricep dips, and hammer curls.</p>
+          </section>
+          <section id="abs">
+            <h3 style="color: #BDFF00;">Abdominal Workouts</h3>
+            <p style="color: #fff;">Get rock-solid abs with exercises like sit-ups, crunches, and planks to improve your core strength and stability.</p>
+          </section>
+          <section id="legs">
+            <h3 style="color: #BDFF00;">Leg Workouts</h3>
+            <p style="color: #fff;">Strengthen your leg muscles with exercises like squats, lunges, and leg presses for better balance and endurance.</p>
+          </section>
+  </div>
+</body>
+</html>
